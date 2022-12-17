@@ -1,0 +1,71 @@
+#This program counts the number of positive (> 0)
+#numbers in a list. 
+#Initialize %rax to 0
+#Get a number out of the list
+#Determine if the number is positive (you'll need a subtract)
+#Add one to %rax if it is positive (you'll need a conditional move)
+#Repeat for each of the five numbers 
+#
+#At the end, %rax should have the count of the number
+#of positive numbers (3 for this data)
+#Store the value of %rax in mem[count]
+#Here is the list of numbers
+        .pos 0x0000
+        irmovq $0,%rax
+        irmovq $0,%rdi
+        irmovq $1,%rsi
+        irmovq nums, %r8
+        irmovq count, %r9
+        mrmovq (%r8),%rdx
+        nop
+        subq %rdi,%rdx
+        cmovg %rsi,%rdi
+        addq %rdi,%rax
+        irmovq $0,%rdi
+        mrmovq 8(%r8),%rdx
+        nop
+        subq %rdi,%rdx
+        cmovg %rsi,%rdi
+        addq %rdi,%rax
+        irmovq $0,%rdi
+        mrmovq 16(%r8),%rdx
+        nop
+        subq %rdi,%rdx
+        cmovg %rsi,%rdi
+        addq %rdi,%rax
+        irmovq $0,%rdi
+        mrmovq 24(%r8),%rdx
+        nop
+        subq %rdi,%rdx
+        cmovg %rsi,%rdi
+        addq %rdi,%rax
+        irmovq $0,%rdi
+        mrmovq 32(%r8),%rdx
+        nop
+        subq %rdi,%rdx
+        cmovg %rsi,%rdi
+        addq %rdi,%rax
+        irmovq $0,%rdi
+        rmmovq %rax,(%r9)
+#
+#Initialize %rax to 0
+#Get a number out of the list
+#Determine if the number is positive (you'll need a subtract)
+#Add one to %rax if it is positive (you'll need a conditional move)
+#Repeat for each of the five numbers 
+#
+#At the end, %rax should have the count of the number
+#of positive numbers (3 for this data)
+#Store the value of %rax in mem[count]
+        halt
+#Here is the list of numbers
+        .align 8
+nums:   .quad 0x23
+        .quad 0x13
+        .quad 0xfffffffffffffff8
+        .quad 0x0
+        .quad 0x11
+count:  .quad 0
+
+
+ 

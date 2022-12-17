@@ -1,0 +1,10 @@
+obj/*.o
+bin/lab4
+bin/lab5
+bin/yess
+tst/*.yo
+**/*.sdump
+**/*.idump
+bin/iyas
+bin/iyess18
+bin/iyessl9

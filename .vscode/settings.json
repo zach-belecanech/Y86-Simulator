@@ -1,0 +1,36 @@
+{
+    "files.associations": {
+        "ConditionCodes.C": "cpp",
+        "Memory.C": "cpp",
+        "Tools.C": "cpp",
+        "RegisterFile.C": "cpp",
+        "MemoryTester.C": "cpp",
+        "ConditionCodesTester.C": "cpp",
+        "Loader.C": "cpp",
+        "String.C": "cpp",
+        "yess.C": "cpp",
+        "lab5.C": "cpp",
+        "W.C": "cpp",
+        "CPU.C": "cpp",
+        "D.C": "cpp",
+        "DecodeStage.C": "cpp",
+        "ExecuteStage.C": "cpp",
+        "MemoryStage.C": "cpp",
+        "WritebackStage.C": "cpp",
+        "PipeReg.C": "cpp",
+        "FetchStage.C": "cpp",
+        "Stage.C": "cpp",
+<<<<<<< HEAD
+        "E.C": "cpp",
+        "F.C": "cpp",
+        "M.C": "cpp",
+        "PipeRegField.C": "cpp",
+        "lab4.C": "cpp"
+=======
+        "M.C": "cpp",
+        "E.C": "cpp",
+        "F.C": "cpp",
+        "PipeRegField.C": "cpp"
+>>>>>>> main
+    }
+}
